@@ -1,0 +1,9 @@
+import os
+MONGO_URL = os.getenv('ME_CONFIG_MONGODB_SERVER')
+print("config",MONGO_URL);
+MONGO_PORT = "27017"
+MONGO_USERNAME= os.getenv('ME_CONFIG_MONGODB_ADMINUSERNAME')
+MONGO_PASSWORD =os.getenv('ME_CONFIG_MONGODB_ADMINPASSWORD')
+MONGO_DBNAME = "IAM"
+
+url= "http://localhost:5002/authorize"
